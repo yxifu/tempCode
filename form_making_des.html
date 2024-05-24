@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
+  <link rel="stylesheet" href="https://form.making.link/public/lib/form-making-v3/dist/index.css">
+  <style>
+    html,body,#app{
+      height: 100%;
+    }
+  </style>
+</head>
+<body >
+  <div id="app" >
+    <fm-making-form preview generate-code generate-json>
+    </fm-making-form>
+  </div>
+</body>
+<!-- 引入组件库 -->
+
+
+  <script src="https://unpkg.com/vue/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/element-plus"></script>
+  <script src="https://form.making.link/public/lib/form-making-v3/dist/form-making-v3.umd.js"></script>
+<script>
+  Vue.createApp({}).use(ElementPlus).use(FormMakingV3, {
+  locale: 'zh-cn'
+  // locale: 'en'
+}).mount('#app')
+</script>
+</html>
